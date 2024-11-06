@@ -17,7 +17,6 @@ public class AddRemoveElementTest {
 
     @BeforeMethod
     public void setup() {
-        // Почему через ChromeOptions, а не просто через .maximize()
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
         driver = new ChromeDriver(options);

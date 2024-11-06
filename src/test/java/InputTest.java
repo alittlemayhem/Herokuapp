@@ -31,9 +31,7 @@ public class InputTest {
         WebElement input = driver.findElement(By.tagName("input"));
 
         input.click();
-        new Actions(driver)
-                .keyDown(Keys.ARROW_UP)
-                .perform();
+        new Actions(driver).keyDown(Keys.ARROW_UP).perform();
 
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertEquals(input.getAttribute("value"), "1");

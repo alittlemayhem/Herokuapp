@@ -28,7 +28,7 @@ public class TyposTest {
 
         String correctText = "won't";
 
-        Assert.assertFalse(text.contains(correctText), "There's a typo!");
+        Assert.assertFalse(text.contains(correctText), "There's a typo");
     }
 
     @AfterMethod(alwaysRun = true)
