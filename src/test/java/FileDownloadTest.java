@@ -10,6 +10,8 @@ import org.testng.annotations.Test;
 import java.io.File;
 import java.time.Duration;
 
+import static org.testng.Assert.*;
+
 public class FileDownloadTest {
 
     WebDriver driver;
@@ -50,7 +52,7 @@ public class FileDownloadTest {
             }
         }
 
-        Assert.assertTrue(
+        assertTrue(
                 flag,
                 "Downloaded was not successful!");
     }
