@@ -43,6 +43,7 @@ public class FileUploadTest {
                 "forUpload.txt",
                 "Wrong file is mentioned."
         );
+        softAssert.assertAll();
     }
 
     @AfterMethod(alwaysRun = true)
