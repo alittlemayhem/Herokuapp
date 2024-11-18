@@ -9,6 +9,8 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
+import static org.testng.Assert.*;
+
 public class FrameTest {
 
     WebDriver driver;
@@ -28,7 +30,7 @@ public class FrameTest {
         driver.switchTo().frame("mce_0_ifr");
         String frameText = driver.findElement(By.id("tinymce")).getText();
 
-        Assert.assertEquals(
+        assertEquals(
                 frameText,
                 "Your content goes here.",
                 "Something wrong is written."
